@@ -1,0 +1,134 @@
+body{
+    font-family: NovaMono;
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+}
+.topbar{
+     background-color: #a5a5a5;
+     display: grid;
+     grid-template-columns: 22% 8% 11% 29% 29.6%;
+     column-gap: .1%;
+     text-align: center;
+     color: aliceblue;
+}
+.location1{
+    background-color: #676767;
+    font-size: 2em;
+
+}
+.location2{
+    background-color: #676767;
+    font-size: 1.2em;
+}
+.location3{
+    background-color: #676767;
+    font-size: 1.2em;
+}
+.date{
+    background-color: #676767;
+    font-size: 1.2em;
+}
+.searchbar{
+    background-color: blueviolet;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 67.5% 30%;
+    column-gap: 2.5%;
+}
+.mainleft{
+    background-color: #D6FF00;
+    display: grid;
+    grid-template-columns: .8fr 1fr .5fr;
+    font-size: 1.5em;
+    color: #707070;
+}
+.col1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    margin-left: 10px;
+}
+.uvindex{
+
+}
+.visibility{
+
+}
+.pressure{
+
+}
+.airquality{
+
+}
+.sunriseset{
+
+}
+.humidity{
+
+}
+.dewpoint{
+
+}
+.col2{
+    background-color: ;
+    display: grid;
+    grid-template-rows: 5fr 1fr 1fr 1fr 1fr;
+    text-align: center;    
+}
+.temp{
+    font-size: 12em;
+    text-align: right;
+}
+.feelslike{
+
+}
+.precipitation{
+
+}
+.clouds{
+
+}
+.col3{
+    margin-top: 80px;
+    margin-right: 10px;
+}
+.temp2{
+    font-size: 5em;
+    text-align: left;
+}
+.highlow{
+    font-size: 1.5em;
+}
+.description{
+    background-color: #676767;
+    height: 40px;
+    color: aliceblue;
+    text-align: center;
+    grid-column: span 3;
+}
+.mainright{
+    display: grid;
+    grid-template-rows: 1.25fr .75fr 1fr;
+}
+.map{
+    background-color: #676767
+}
+.wind{
+    background-color: #D6FF00;
+}
+.alerts{
+    background-color: #FF3400;
+    margin-top: 40px;
+}
+.forcast{
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin-top: 40px;
+}
+.day1{
+    border:5px solid #D6FF00;
+    border-radius: 5%;
+}
