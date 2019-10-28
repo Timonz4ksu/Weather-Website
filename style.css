@@ -1,5 +1,13 @@
 body{
     font-family: NovaMono;
+background-color: rgb(238, 238, 238);
+}
+
+#map {
+	width: 450px;
+    height: 600px;
+}
+.results{
     display: grid;
     grid-template-columns: 10vw 80vw 10vw;
 }
@@ -46,7 +54,7 @@ body{
 }
 .col1{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
     margin-left: 10px;
 }
 .uvindex{
@@ -73,12 +81,13 @@ body{
 .col2{
     background-color: ;
     display: grid;
-    grid-template-rows: 5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5fr .5fr .5fr .5fr;
     text-align: center;    
 }
 .temp{
     font-size: 12em;
     text-align: right;
+    margin-top: 1vh;
 }
 .feelslike{
 
@@ -94,7 +103,7 @@ body{
     margin-right: 10px;
 }
 .temp2{
-    font-size: 5em;
+    font-size: 4em;
     text-align: left;
 }
 .highlow{
@@ -121,14 +130,14 @@ body{
     background-color: #FF3400;
     margin-top: 40px;
 }
-.forcast{
-    background-color: chocolate;
+.forcast{;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 40px;
     margin-top: 40px;
 }
 .day1{
-    border:5px solid #D6FF00;
+    border:5px solid aliceblue;
     border-radius: 5%;
+    background-color: aliceblue;
 }

@@ -105,6 +105,7 @@ if (getParameterByName('zip')) {
 }
 
 function zipTest(e) {
+	console.log(e);
     let log = document.getElementById('zip_display');
 
     var test_zip = e.target.value.replace(/\D/g, '');
