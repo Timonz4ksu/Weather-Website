@@ -19,7 +19,7 @@ p{
 .topbar{
      background-color: #a5a5a5;
      display: grid;
-     grid-template-columns: 22% 8% 11% 29% 29.6%;
+     grid-template-columns: 22% 8% 11% 28.6% 30%;
      column-gap: .1%;
      text-align: center;
      color: aliceblue;
@@ -49,11 +49,13 @@ p{
     display: grid;
     grid-template-columns: 67.5% 30%;
     column-gap: 2.5%;
+    
 }
 .mainleft{
     background-color: #D6FF00;
     display: grid;
     grid-template-columns: .8fr 1fr .5fr;
+    grid-template-rows: .5fr .01fr;
     font-size: 1.5em;
     color: #707070;
 }
@@ -94,7 +96,7 @@ p{
     text-align: right;
     margin-top: 1vh;
 }
-.temp p{
+.temp{
     margin: 0;
 }
 .feelslike{
@@ -118,6 +120,7 @@ p{
     font-size: 1.5em;
 }
 .description{
+    position: relative;
     background-color: #676767;
     height: 40px;
     color: aliceblue;
@@ -126,13 +129,14 @@ p{
 }
 .mainright{
     display: grid;
-    grid-template-rows: 1.25fr .75fr 1fr;
+    grid-template-rows: 1fr .20fr .30fr;
 }
 .map{
     background-color: #676767
 }
 .wind{
     background-color: #D6FF00;
+    text-align: center;
 }
 .alerts{
     background-color: #FF3400;
@@ -144,8 +148,70 @@ p{
     column-gap: 40px;
     margin-top: 40px;
 }
+.dayname{
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .day1{
     border:5px solid aliceblue;
     border-radius: 5%;
     background-color: aliceblue;
 }
+
+.icon-50d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 90%;
+}
+.icon-13d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 80%;
+}
+.icon-11d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 80%;
+}
+.icon-10d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 80%;
+}
+.icon-09d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 80%;
+}
+.icon-04d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 80%;
+}
+.icon-03d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 80%;
+}
+.icon-02d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 80%;
+}
+.icon-01d{
+    background-image: url("/img/50d.png");  
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 80%;
+}
+
+/* */

@@ -40,27 +40,27 @@
             </div>
 
             <div class="main">
-                <div class="mainleft">
+                <div class="mainleft" v-bind:class="'icon-'+forecast[0].description_icon">
                     <div class="col1">
                         <div class="uvindex"><p>UV Index: {{current.uv}}</p></div>
                         <div class="visibility">Visibility: {{forecast[0].vis}}mi.</div>
                         <div class="pressure"><p>Pressure: {{current.pressure}}</p></div>
-                        <div class="airquality"><p>{{current.air_quality}}</p></div>
+                        <div class="airquality"><p>Air Quality: {{current.air_quality}}</p></div>
+                        <div class="humidity"><p>Humidity: {{current.humidity}}</p></div>
+                        <div class="dewpoint"><p>Dew Point: {{forecast[0].dewpt}}°F</p></div>
                         <div class="sunriseset">
                             <p>Sunrise: {{current.sunrise}}</p>
                             <p>Sunset: {{current.sunset}}</p>
                         </div>
-                        <div class="humidity"><p>Humidity: {{current.humidity}}</p></div>
-                        <div class="dewpoint"><p>Dew Point: {{forecast[0].dewpt}}°F</p></div>
                     </div>
                     <div class="col2">
                         <div class="temp"><p>{{current.temp.current}}</p></div>
-                        <div class="feelslike"><p>Feels Like: {{current.temp.feelslike}}</p></div>
+                        <div class="feelslike"><p>Feels Like: {{current.temp.feelslike}}°F</p></div>
                         <div class="precipitation"> Precipitation:
                             <p>Rain: {{forecast[0].precip}}</p>
                             <p>Snow: {{forecast[0].snow}}</p>
                         </div>
-                        <div class="clouds">Cloud Coverage: {{current.cloud_cover}}</div>
+                        <div class="clouds">Cloud Coverage: {{current.cloud_cover}}%</div>
                     </div>
                     <div class="col3">
                         <div class="temp2">°F</div>
@@ -76,7 +76,7 @@
                 <div class="mainright">
                     <div class="map"><div id="map"></div></div>
                     <div class="wind">
-                        <p>Wind Speed: {{current.wind.speed}}mph</p>
+                        <p>Wind Speed: {{current.wind.speed}}</p>
                         <p>Wind Direction: {{hourly[0].windDirection}}</p>
                     </div>
                     <div class="alerts"></div>
@@ -84,7 +84,7 @@
             </div>
             <div class="forcast">
                     <div class="day1">
-                        <div class="dayname"><h6>{{forecast[1].weekday}}</h6></div>
+                        <div class="dayname">{{forecast[1].weekday}}</div>
                         <div class="dayhighlow">
                             <p  class="degree_symbol">High - {{forecast[1].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[1].min_temp}}°F</p>
@@ -100,7 +100,7 @@
                         <div class="divdewpt"><p>Dew Point: {{forecast[1].dewpt}}°F</p></div>
                     </div>
                     <div class="day1">
-                        <div class="dayname"><h6>{{forecast[2].weekday}}</h6></div>
+                        <div class="dayname">{{forecast[2].weekday}}</div>
                         <div class="dayhighlow">
                             <p  class="degree_symbol">High - {{forecast[2].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[2].min_temp}}°F</p>
@@ -116,7 +116,7 @@
                         <div class="divdewpt"><p>Dew Point: {{forecast[2].dewpt}}°F</p></div>
                     </div>
                     <div class="day1">
-                        <div class="dayname"><h6>{{forecast[3].weekday}}</h6></div>
+                        <div class="dayname">{{forecast[3].weekday}}</div>
                         <div class="dayhighlow">
                             <p  class="degree_symbol">High - {{forecast[3].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[3].min_temp}}°F</p>
@@ -132,7 +132,7 @@
                         <div class="divdewpt"><p>Dew Point: {{forecast[3].dewpt}}°F</p></div>
                     </div>
                     <div class="day1">
-                        <div class="dayname"><h6>{{forecast[4].weekday}}</h6></div>
+                        <div class="dayname">{{forecast[4].weekday}}</div>
                         <div class="dayhighlow">
                             <p  class="degree_symbol">High - {{forecast[4].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[4].min_temp}}°F</p>
@@ -148,7 +148,7 @@
                         <div class="divdewpt"><p>Dew Point: {{forecast[4].dewpt}}°F</p></div>
                     </div>
                     <div class="day1">
-                        <div class="dayname"><h6>{{forecast[5].weekday}}</h6></div>
+                        <div class="dayname">{{forecast[5].weekday}}</div>
                         <div class="dayhighlow">
                             <p  class="degree_symbol">High - {{forecast[5].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[5].min_temp}}°F</p>
