@@ -86,7 +86,6 @@ p{
 
 }
 .col2{
-    background-color: ;
     display: grid;
     grid-template-rows: 5fr .5fr .5fr .5fr;
     text-align: center;    
@@ -129,10 +128,10 @@ p{
 }
 .mainright{
     display: grid;
-    grid-template-rows: 1fr .20fr .30fr;
+    grid-template-rows: .5fr .20fr .78fr;
 }
 .map{
-    background-color: #676767
+    background-color: #676767;
 }
 .wind{
     background-color: #D6FF00;

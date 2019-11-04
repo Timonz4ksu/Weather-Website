@@ -56,9 +56,8 @@
                     <div class="col2">
                         <div class="temp"><p>{{current.temp.current}}</p></div>
                         <div class="feelslike"><p>Feels Like: {{current.temp.feelslike}}°F</p></div>
-                        <div class="precipitation"> Precipitation:
-                            <p>Rain: {{forecast[0].precip}}</p>
-                            <p>Snow: {{forecast[0].snow}}</p>
+                        <div class="precipitation"> Probabability of Precipitation: {{forecast[0].pop}}%
+                            <p>Rain: {{forecast[0].precip}} Snow: {{forecast[0].snow}}</p>
                         </div>
                         <div class="clouds">Cloud Coverage: {{current.cloud_cover}}%</div>
                     </div>
@@ -70,7 +69,7 @@
                         </div>
                     </div>
                     <div class="description">
-                        <p>{{current.description_main}} {{current.description_long}} {{current.description_icon}}</p>
+                        <p>{{current.description_main}} ({{current.description_long}})</p>
                     </div>
                 </div>
                 <div class="mainright">
@@ -89,10 +88,9 @@
                             <p  class="degree_symbol">High - {{forecast[1].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[1].min_temp}}°F</p>
                         </div>
-                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[1].pop}}</p></div>
+                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[1].pop}}%</p></div>
                         <div class="dayprecipitation">
-                            Rain: <p>{{forecast[1].precip}}</p>
-                            Snow: <p>{{forecast[1].snow}}</p>
+                            <p>Rain: {{forecast[1].precip}}in. Snow: {{forecast[1].snow}}in.</p>
                         </div>
                         <div class="dayclouds"><p>Cloud Coverage: {{forecast[1].clouds}}%</p></div>
                         <div class="daywindspd"><p>Wind Speed: {{forecast[1].wind_spd}} mph</p></div>
@@ -105,10 +103,9 @@
                             <p  class="degree_symbol">High - {{forecast[2].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[2].min_temp}}°F</p>
                         </div>
-                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[2].pop}}</p></div>
+                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[2].pop}}%</p></div>
                         <div class="dayprecipitation">
-                            Rain: <p>{{forecast[2].precip}}</p>
-                            Snow: <p>{{forecast[2].snow}}</p>
+                            <p>Rain: {{forecast[2].precip}}in. Snow: {{forecast[2].snow}}in.</p>
                         </div>
                         <div class="dayclouds"><p>Cloud Coverage: {{forecast[2].clouds}}%</p></div>
                         <div class="daywindspd"><p>Wind Speed: {{forecast[2].wind_spd}} mph</p></div>
@@ -121,10 +118,9 @@
                             <p  class="degree_symbol">High - {{forecast[3].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[3].min_temp}}°F</p>
                         </div>
-                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[3].pop}}</p></div>
+                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[3].pop}}%</p></div>
                         <div class="dayprecipitation">
-                            Rain: <p>{{forecast[3].precip}}</p>
-                            Snow: <p>{{forecast[3].snow}}</p>
+                            <p>Rain: {{forecast[3].precip}}in. Snow: {{forecast[3].snow}}in.</p>
                         </div>
                         <div class="dayclouds"><p>Cloud Coverage: {{forecast[3].clouds}}%</p></div>
                         <div class="daywindspd"><p>Wind Speed: {{forecast[3].wind_spd}} mph</p></div>
@@ -137,10 +133,9 @@
                             <p  class="degree_symbol">High - {{forecast[4].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[4].min_temp}}°F</p>
                         </div>
-                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[4].pop}}</p></div>
+                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[4].pop}}%</p></div>
                         <div class="dayprecipitation">
-                            Rain: <p>{{forecast[4].precip}}</p>
-                            Snow: <p>{{forecast[4].snow}}</p>
+                            <p>Rain: {{forecast[4].precip}}in. Snow: {{forecast[4].snow}}in.</p>
                         </div>
                         <div class="dayclouds"><p>Cloud Coverage: {{forecast[4].clouds}}%</p></div>
                         <div class="daywindspd"><p>Wind Speed: {{forecast[4].wind_spd}} mph</p></div>
@@ -153,10 +148,9 @@
                             <p  class="degree_symbol">High - {{forecast[5].max_temp}}°F</p>
                             <p  class="degree_symbol">Low - {{forecast[5].min_temp}}°F</p>
                         </div>
-                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[5].pop}}</p></div>
+                        <div class="daypop"><p>Probabability of Precipitation: {{forecast[5].pop}}%</p></div>
                         <div class="dayprecipitation">
-                            Rain: <p>{{forecast[5].precip}}</p>
-                            Snow: <p>{{forecast[5].snow}}</p>
+                            <p>Rain: {{forecast[5].precip}}in. Snow: {{forecast[5].snow}}in.</p>
                         </div>
                         <div class="dayclouds"><p>Cloud Coverage: {{forecast[5].clouds}}%</p></div>
                         <div class="daywindspd"><p>Wind Speed: {{forecast[5].wind_spd}} mph</p></div>
