@@ -1,8 +1,8 @@
 body{
     font-family: NovaMono;
-background-color: rgb(238, 238, 238);
-margin: 0;
-padding: 0;
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+    padding: 0;
 }
 p{
     margin: 0;
@@ -42,26 +42,28 @@ p{
     font-size: 1.2em;
 }
 .searchbar{
-    background-color: blueviolet;
+    background-color: #676767;
 }
 
 .main{
     display: grid;
     grid-template-columns: 67.5% 30%;
     column-gap: 2.5%;
-    
 }
 .mainleft{
+    display: grid;
+    grid-template-rows: 80vh 5vh;
+    color: #707070;
+}
+.gridtop{
     background-color: #D6FF00;
     display: grid;
     grid-template-columns: .8fr 1fr .5fr;
-    grid-template-rows: .5fr .01fr;
     font-size: 1.5em;
-    color: #707070;
 }
 .col1{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 12vh 12vh 12vh 12vh 12vh 12vh; 
     margin-left: 10px;
 }
 .uvindex{
@@ -87,7 +89,7 @@ p{
 }
 .col2{
     display: grid;
-    grid-template-rows: 5fr .5fr .5fr .5fr;
+    grid-template-rows: 40vh 10vh 0h;
     text-align: center;    
 }
 .temp{
@@ -124,11 +126,10 @@ p{
     height: 40px;
     color: aliceblue;
     text-align: center;
-    grid-column: span 3;
 }
 .mainright{
     display: grid;
-    grid-template-rows: .5fr .20fr .78fr;
+    grid-template-rows: 56.5vh 8vh 19.5vh;
 }
 .map{
     background-color: #676767;
@@ -136,10 +137,14 @@ p{
 .wind{
     background-color: #D6FF00;
     text-align: center;
+    padding-top: 2%;
 }
 .alerts{
     background-color: #FF3400;
     margin-top: 40px;
+    text-align: center;
+    padding-top: 0%;
+    font-size: 3em;
 }
 .forcast{;
     display: grid;

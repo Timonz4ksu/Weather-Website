@@ -33,39 +33,41 @@
             <div class="topbar">
                 <div class="location1"><p>{{city}},{{location.state}}</p></div>
                 <div class="location2"><p>{{location.zip}}</p></div>
-                <div class="location3"><p>{{location.coord.lat}}</p><p>{{location.coord.lon}}</p></div>
-                <div class="date"><p>{{time.date}}</p><p>{{forecast[0].weekday}} - {{hourly[0].time}}</p></div>
+                <div class="location3"><p>Lat: {{location.coord.lat}}</p><p> Long: {{location.coord.lon}}</p></div>
+                <div class="date"><p>{{time.date}} {{forecast[0].weekday}} - {{hourly[0].time}}</p></div>
                 <div class="searchbar"> <input placeholder="Enter Your ZIP Code" v-on:input="zipTest" name="name" id="zip" />
                     <p id="zip_display"></p></div>
             </div>
 
             <div class="main">
-                <div class="mainleft" v-bind:class="'icon-'+forecast[0].description_icon">
-                    <div class="col1">
-                        <div class="uvindex"><p>UV Index: {{current.uv}}</p></div>
-                        <div class="visibility">Visibility: {{forecast[0].vis}}mi.</div>
-                        <div class="pressure"><p>Pressure: {{current.pressure}}</p></div>
-                        <div class="airquality"><p>Air Quality: {{current.air_quality}}</p></div>
-                        <div class="humidity"><p>Humidity: {{current.humidity}}</p></div>
-                        <div class="dewpoint"><p>Dew Point: {{forecast[0].dewpt}}°F</p></div>
-                        <div class="sunriseset">
-                            <p>Sunrise: {{current.sunrise}}</p>
-                            <p>Sunset: {{current.sunset}}</p>
+                <div class="mainleft">
+                    <div class="gridtop" v-bind:class="'icon-'+forecast[0].description_icon">
+                        <div class="col1">
+                            <div class="uvindex"><p>UV Index: {{current.uv}}</p></div>
+                            <div class="visibility">Visibility: {{forecast[0].vis}}mi.</div>
+                            <div class="pressure"><p>Pressure: {{current.pressure}}</p></div>
+                            <div class="airquality"><p>Air Quality: {{current.air_quality}}</p></div>
+                            <div class="humidity"><p>Humidity: {{current.humidity}}</p></div>
+                            <div class="dewpoint"><p>Dew Point: {{forecast[0].dewpt}}°F</p></div>
+                            <div class="sunriseset">
+                                <p>Sunrise: {{current.sunrise}}</p>
+                                <p>Sunset: {{current.sunset}}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col2">
-                        <div class="temp"><p>{{current.temp.current}}</p></div>
-                        <div class="feelslike"><p>Feels Like: {{current.temp.feelslike}}°F</p></div>
-                        <div class="precipitation"> Probabability of Precipitation: {{forecast[0].pop}}%
-                            <p>Rain: {{forecast[0].precip}} Snow: {{forecast[0].snow}}</p>
+                        <div class="col2">
+                            <div class="temp"><p>{{current.temp.current}}</p></div>
+                            <div class="feelslike"><p>Feels Like: {{current.temp.feelslike}}°F</p></div>
+                            <div class="precipitation"> Probabability of Precipitation: {{forecast[0].pop}}%
+                                <p>Rain: {{forecast[0].precip}}in. Snow: {{forecast[0].snow}}in.</p>
+                            </div>
+                            <div class="clouds">Cloud Coverage: {{current.cloud_cover}}%</div>
                         </div>
-                        <div class="clouds">Cloud Coverage: {{current.cloud_cover}}%</div>
-                    </div>
-                    <div class="col3">
-                        <div class="temp2">°F</div>
-                        <div class="highlow">
-                            <p class="degree_symbol"><p  class="degree_symbol">{{forecast[0].max_temp}}°F</p></p>
-                            <p class="degree_symbol"><p  class="degree_symbol">{{forecast[0].min_temp}}°F</p></p>
+                        <div class="col3">
+                            <div class="temp2">°F</div>
+                            <div class="highlow">
+                                <p class="degree_symbol"><p  class="degree_symbol">{{forecast[0].max_temp}}°F</p></p>
+                                <p class="degree_symbol"><p  class="degree_symbol">{{forecast[0].min_temp}}°F</p></p>
+                            </div>
                         </div>
                     </div>
                     <div class="description">
@@ -78,7 +80,7 @@
                         <p>Wind Speed: {{current.wind.speed}}</p>
                         <p>Wind Direction: {{hourly[0].windDirection}}</p>
                     </div>
-                    <div class="alerts"></div>
+                    <div class="alerts">No current Alerts</div>
                 </div>
             </div>
             <div class="forcast">
